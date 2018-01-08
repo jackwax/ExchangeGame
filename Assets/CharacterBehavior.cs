@@ -8,6 +8,9 @@ public class CharacterBehavior : MonoBehaviour {
 	public float mouseSensitivity = 4f;
 	float mouseY;
 
+
+	int testjack = 0;
+
 	/* CONTROLLING */
 	public float moveSpeed = 500f;
 	private int health = 1;
