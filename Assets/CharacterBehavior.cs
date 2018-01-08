@@ -11,11 +11,11 @@ public class CharacterBehavior : MonoBehaviour {
 	/* CONTROLLING */
 	public float moveSpeed = 500f;
 	private int health = 1;
-
+	public int mood = 0;
 
 	/**internals**/
 	[HideInInspector] public float distToGround;
-	[HideInInspector] public static Rigidbody rb; //why is this static?
+	[HideInInspector] public static Rigidbody rb; 
 
 
 
@@ -89,7 +89,7 @@ public class CharacterBehavior : MonoBehaviour {
 
 
 	void FixedUpdate(){
-		Debug.Log ("yeah");
+		//Debug.Log ("yeah");
 		Move ();
 	}
 }
