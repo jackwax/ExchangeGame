@@ -23,9 +23,17 @@ public class MoodManager : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+
+
+
+
 		if (Input.GetKeyDown (KeyCode.Equals))
 			IncreaseMood (target, 1);
 		if (Input.GetKeyDown (KeyCode.Minus))
 			DecreaseMood (target, 1);
+
+
+		print (target.GetComponent<CharacterBehavior> ().mood);
+
 	}
 }
