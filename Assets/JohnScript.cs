@@ -2,14 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerController : CharacterBehavior {
+public class JohnScript : CharacterBehavior {
 
 	Vector3 movedir;
 	public float mouseSensitivity = 4f;
 	float mouseY;
 
 
-	int testjack = 0;
+
 
 	/* CONTROLLING */
 	public float moveSpeed = 500f;
@@ -20,6 +20,8 @@ public class PlayerController : CharacterBehavior {
 
 	// Use this for initialization
 	void Start () {
+		goodColor = new Color (255, 43, 43, 255);
+		badColor = new Color (111, 24, 24, 255);
 		CharacterInitialization ();
 		
 	}
