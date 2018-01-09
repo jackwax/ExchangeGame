@@ -9,10 +9,11 @@ public class CharacterBehavior : MonoBehaviour {
 	public int mood;
 
 
-	[HideInInspector] public Color badColor;
-	[HideInInspector] public Color goodColor;
+	public Dictionary <int, Color> colorlist;
 
 	[HideInInspector] public float distToGround;
+
+
 
 
 
@@ -21,8 +22,13 @@ public class CharacterBehavior : MonoBehaviour {
 		rb = GetComponent<Rigidbody> ();
 		rb.freezeRotation = true;
 		distToGround = GetComponent<Collider> ().bounds.extents.y;
+		colorlist = new Dictionary<int, Color> ();
 
 		mood = 0;
+	}
+
+	public void AddColor(int index, Color col){
+		colorlist.Add (index, col);
 	}
 
 	//check if we've touched ground
