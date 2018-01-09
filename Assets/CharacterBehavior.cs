@@ -52,4 +52,5 @@ public class CharacterBehavior : MonoBehaviour {
 	void Update () {
 
 	}
+
 }
