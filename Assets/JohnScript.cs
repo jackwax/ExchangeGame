@@ -85,8 +85,12 @@ public class JohnScript : CharacterBehavior {
 		if( charController.isGrounded == true ) {
 			if (left == true) {
 				movement.Play( "left" );
+        left = false;
+        right = true;
 			} else if ( right == true ) {
 				movement.Play( "right" );
+        left = true;
+        right = false;
 			}
 		}
 	}
