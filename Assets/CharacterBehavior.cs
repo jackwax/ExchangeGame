@@ -8,6 +8,10 @@ public class CharacterBehavior : MonoBehaviour {
 
 	public int mood;
 
+
+	[HideInInspector] public Color badColor;
+	[HideInInspector] public Color goodColor;
+
 	[HideInInspector] public float distToGround;
 
 
