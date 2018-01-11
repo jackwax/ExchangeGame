@@ -32,21 +32,21 @@ public class JohnScript : CharacterBehavior {
 	}
 
 	void InitColor(){
-		AddColor (-7, new Color (32, 0, 0, 255));
-		AddColor (-6, new Color (43, 4, 4, 255));
-		AddColor (-5, new Color(49, 10, 10, 255 ));
-		AddColor (-4, new Color (99, 22, 22, 255));
-		AddColor (-3, new Color (120, 27, 27, 255));
-		AddColor (-2, new Color (150, 35, 35, 255));
-		AddColor (-1, new Color (165, 25, 25, 255));
-		AddColor (0, new Color (182, 55, 55, 255));
-		AddColor (1, new Color (192, 16, 25, 255));
-		AddColor (2, new Color (208, 16, 25, 255));
-		AddColor (3, new Color (231, 20, 30, 255));
-		AddColor (4, new Color (231, 57, 30, 255));
-		AddColor (5, new Color (246, 12, 0, 255));
-		AddColor (6, new Color (255, 13, 0, 255));
-		AddColor (7, new Color (255, 61, 51, 255));
+		AddColor (-7, new Color (32/255f, 0, 0, 1f));
+		AddColor (-6, new Color (43/255f, 4/255f, 4/255f, 1f));
+		AddColor (-5, new Color(49/255f, 10/255f, 10/255f, 1f ));
+		AddColor (-4, new Color (99/255f, 22/255f, 22/255f, 1f));
+		AddColor (-3, new Color (120/255f, 27/255f, 27/255f, 1f));
+		AddColor (-2, new Color (150/255f, 35/255f, 35/255f, 1f));
+		AddColor (-1, new Color (165/255f, 25/255f, 25/255f, 1f));
+		AddColor (0, new Color (182/255f, 55/255f, 55/255f, 1f));
+		AddColor (1, new Color (192/255f, 16/255f, 25/255f, 1f));
+		AddColor (2, new Color (208/255f, 16/255f, 25/255f, 1f));
+		AddColor (3, new Color (231/255f, 20/255f, 30/255f, 1f));
+		AddColor (4, new Color (231/255f, 57/255f, 30/255f, 1f));
+		AddColor (5, new Color (246/255f, 12/255f, 0, 1f));
+		AddColor (6, new Color (255/255f, 13/255f, 0, 1f));
+		AddColor (7, new Color (255/255f, 61/255f, 51/255f, 1f));
 	}
 
 
