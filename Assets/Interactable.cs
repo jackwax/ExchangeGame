@@ -29,7 +29,14 @@ public class Interactable : MonoBehaviour {
 
 		if (canInteract == true) {
 			if (Input.GetKeyUp (KeyCode.Mouse0)) {
-				hoveredObject.GetComponent<Thing> ().SendMessage ();
+				/**Interact logic goes here. Objects should call their own interact methods**/
+				if (hoveredObject.tag == "touchable") {
+					hoveredObject.GetComponent<Thing> ().SendMessage ();
+
+				} else if (hoveredObject.tag == "pickup") {
+					//hoveredObject.GetComponent<PickUp>().pickUp();
+				}
+
 			}
 
 		}
@@ -38,24 +45,15 @@ public class Interactable : MonoBehaviour {
 
 	/**to determine whether the thing in the crosshair is interactable**/
 	public bool isInteractable(){
-		crosshair.transform.position = Input.mousePosition;
 		Ray romano = Camera.main.ScreenPointToRay (Input.mousePosition);
 		RaycastHit hit = new RaycastHit ();
 
 		Debug.DrawRay (romano.origin, romano.direction * 2f, Color.green);
-
-
-
-
-
 		if (Physics.Raycast (romano, out hit, 2f)) {
 			hoveredObject = hit.collider.gameObject;
 
 			//print ("yeh");
-			if (hit.collider.gameObject.tag == "touchable") {
-				return true;
-
-			} else if (hit.collider.gameObject.tag == "pickup") {
+			if (hit.collider.gameObject.tag == "touchable" || hit.collider.gameObject.tag == "pickup") {
 				return true;
 			} else {
 				return false;
