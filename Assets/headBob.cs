@@ -5,15 +5,13 @@ using UnityEngine;
 // Class used for animating a head bob when a player is moving 
 public class headBob : MonoBehaviour {
 
-    // Animation instance used for accessing animation methods and CharacterController used for 
-	// accessing player information 
-    public Animation bob;
-	public CharacterController player; 
+    // Animation instance used for accessing animation methods
+    public Animation bob; 
 
     // Boolean flags used to determine which foot is on the ground and if the player is moving
     private bool left;
     private bool right; 
-	private bool moving;
+    private bool isMoving;
 
 	// Allows access to John's script, used for telling whether or not the player is moving 
 	JohnScript js;
@@ -24,8 +22,6 @@ public class headBob : MonoBehaviour {
 
         left = true;
         right = false;
-		js = GetComponent<JohnScript> ();
-		moving = js.isMoving;
 
     }
     
@@ -33,9 +29,15 @@ public class headBob : MonoBehaviour {
     // Gets the current position of the player and calls the head bobbing animation if the
     // player is moving. 
     void Update () {
-        
-		moving = js.isMoving;
-        if( moving ){
+		
+		float horizontalMove = Input.GetAxisRaw ("Horizontal");
+		float verticalMove = Input.GetAxisRaw ("Vertical");
+		if (verticalMove != 0 || horizontalMove != 0) {
+			isMoving = true;
+		} else {
+			isMoving = false;
+		}
+        if( isMoving ){
             headBobAnimation();
         }
         
@@ -43,23 +45,22 @@ public class headBob : MonoBehaviour {
 
     // Assesses which animation to play ( or none at all ) based on the boolean flags
     void headBobAnimation() {
-  
-        if( player.isGrounded ){
-            if( left ){
-				if( !bob.isPlaying ){
-					bob.Play( "left" );
-                    left = false;
-                    right = true;
-                }
+      
+        if( left ){
+            if( !bob.isPlaying ){
+                bob.Play( "left" );
+                left = false;
+                right = true;
             }
-            if( right ){
-				if( !bob.isPlaying ){
-					bob.Play( "right" );
-                    left = true;
-                    right = false;
-                }
+        }
+        if( right ){
+            if( !bob.isPlaying ){
+                bob.Play( "right" );
+                left = true;
+                right = false;
             }
-        }       
+        }
+
     }
     
 }
