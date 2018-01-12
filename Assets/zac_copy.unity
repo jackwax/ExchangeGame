@@ -1058,7 +1058,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bob: {fileID: 1601818897}
-  player: {fileID: 0}
 --- !u!111 &1601818897
 Animation:
   m_ObjectHideFlags: 0
