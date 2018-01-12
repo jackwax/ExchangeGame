@@ -10,7 +10,7 @@ public class JohnScript : CharacterBehavior {
 
 	// Used for handling the head bobbing animation 
 	public Animation movement; 
-	public CharacterController charController;
+	//public CharacterController charController;
 	public bool left;
 	public bool right;
 
@@ -82,17 +82,18 @@ public class JohnScript : CharacterBehavior {
 		rb.velocity += yVelFix;	//allows player to be affected by gravity
 
 		// Functionality for head bobbing -- only displayed when John is moving
-		if( charController.isGrounded == true ) {
-			if (left == true) {
-				movement.Play( "left" );
-			} else if ( right == true ) {
-				movement.Play( "right" );
-			}
-		}
+//		if( charController.isGrounded == true ) {
+//			if (left == true) {
+//				movement.Play( "left" );
+//			} else if ( right == true ) {
+//				movement.Play( "right" );
+//			}
+
 	}
 
 
 	void FixedUpdate(){
+		print ("move called");
 		Move ();
 	}
 
