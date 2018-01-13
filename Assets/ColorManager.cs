@@ -6,10 +6,6 @@ public class ColorManager : MonoBehaviour {
 	public GameObject target;
 	public CharacterBehavior behave;
 
-	//startColor: Initial color value of the target's material.
-	public Color lastColor;
-
-	//endColor: The final color value for target. Initially the same as startColor.
 	public Color endColor;
 
 	//rend: Renderer component of target game object.
@@ -26,15 +22,14 @@ public class ColorManager : MonoBehaviour {
 	void Start () {
 		target = behave.gameObject;
 		rend = target.GetComponent<Renderer> ();
-		lastColor = behave.colorlist[behave.mood];
 	}
 
 	/*
 	 * Set the target color to interpolate to.
 	 * The actual process of changing the color happens in update(), so we also set the boolean flag toLerp to true.
 	 */
-	void ColorMoodChange(int newMood){
-		endColor = behave.colorlist[newMood];
+	public void ColorMoodChange(int lastMood){
+		endColor = behave.colorlist[lastMood];
 		toLerp = true;
 	}
 
@@ -46,12 +41,11 @@ public class ColorManager : MonoBehaviour {
 
 		if (toLerp) {
 			if (t <= 1) {
-				Color c = Color.Lerp (lastColor, endColor, t);
+				Color c = Color.Lerp (endColor, behave.colorlist[behave.mood], t);
 				t += Time.deltaTime / lerpDuration;
 				rend.material.color = c;
 			}else{
 				toLerp = false;
-				lastColor = endColor;
 				t = 0.0f;
 			}
 		}
