@@ -60,6 +60,16 @@ public class JohnScript : CharacterBehavior {
 	
 	// Update is called once per frame
 	void Update () {
+
+		
+		if (Input.GetKeyDown (KeyCode.Equals)) {
+			this.gameObject.GetComponent<MoodManager> ().IncreaseMood (this.gameObject, 1);
+		}
+		if (Input.GetKeyDown (KeyCode.Minus)) {
+			this.gameObject.GetComponent<MoodManager> ().DecreaseMood (this.gameObject, 1);
+		}
+		
+		
 		float horizontalMove = Input.GetAxisRaw ("Horizontal");
 		float verticalMove = Input.GetAxisRaw ("Vertical");
 		movedir = (transform.right * horizontalMove + transform.forward * verticalMove).normalized;
