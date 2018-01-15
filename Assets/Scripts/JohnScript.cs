@@ -14,10 +14,11 @@ public class JohnScript : CharacterBehavior {
 	public bool left;
 	public bool right;
 
-
 	/* CONTROLLING */
 	public float moveSpeed = 500f;
 
+	// Boolean flag for when John is moving 
+	public bool isMoving = false; 
 	/**internals**/
 
 
@@ -26,9 +27,6 @@ public class JohnScript : CharacterBehavior {
 	void Start () {
 		CharacterInitialization ();
 		InitColor ();
-		// The head bobbing will work according to which foot is currently moving, starting with the left foot. 
-		left = true;
-		right = false;
 	}
 
 	void InitColor(){
@@ -72,6 +70,11 @@ public class JohnScript : CharacterBehavior {
 		
 		float horizontalMove = Input.GetAxisRaw ("Horizontal");
 		float verticalMove = Input.GetAxisRaw ("Vertical");
+		if (verticalMove != 0 || horizontalMove != 0) {
+			isMoving = true;
+		} else {
+			isMoving = false;
+		}
 		movedir = (transform.right * horizontalMove + transform.forward * verticalMove).normalized;
 		Look ();	
 	}
