@@ -35,6 +35,8 @@ public class Interactable : MonoBehaviour {
 
 				} else if (hoveredObject.tag == "pickup") {
 					//hoveredObject.GetComponent<PickUp>().pickUp();
+				} else if (hoveredObject.tag == "door") {
+					hoveredObject.GetComponentInParent<DoorHandler> ().touchDoor();
 				}
 
 			}
@@ -53,7 +55,7 @@ public class Interactable : MonoBehaviour {
 			hoveredObject = hit.collider.gameObject;
 
 			//print ("yeh");
-			if (hit.collider.gameObject.tag == "touchable" || hit.collider.gameObject.tag == "pickup") {
+			if (hit.collider.gameObject.tag == "touchable" || hit.collider.gameObject.tag == "pickup" || hit.collider.gameObject.tag == "door") {
 				return true;
 			} else {
 				return false;
