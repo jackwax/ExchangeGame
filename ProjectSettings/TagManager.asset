@@ -6,6 +6,9 @@ TagManager:
   tags:
   - touchable
   - door
+  - carpet
+  - tile
+  - wood
   layers:
   - Default
   - TransparentFX
