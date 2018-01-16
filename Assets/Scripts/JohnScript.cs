@@ -58,7 +58,9 @@ public class JohnScript : CharacterBehavior {
 	
 	// Update is called once per frame
 	void Update () {
-
+		if (Time.timeScale == 0f) {
+			return;
+		}
 		
 		if (Input.GetKeyDown (KeyCode.Equals)) {
 			this.gameObject.GetComponent<MoodManager> ().IncreaseMood (this.gameObject, 1);
@@ -67,20 +69,12 @@ public class JohnScript : CharacterBehavior {
 			this.gameObject.GetComponent<MoodManager> ().DecreaseMood (this.gameObject, 1);
 		}
 		
-		
-		float horizontalMove = Input.GetAxisRaw ("Horizontal");
-		float verticalMove = Input.GetAxisRaw ("Vertical");
-		if (verticalMove != 0 || horizontalMove != 0) {
-			isMoving = true;
-		} else {
-			isMoving = false;
-		}
-		movedir = (transform.right * horizontalMove + transform.forward * verticalMove).normalized;
-		Look ();	
+
 	}
 
 	public void Look(){
 		// Mouse look control:
+
 		transform.Rotate( 0f, Input.GetAxis( "Mouse X" ) * mouseSensitivity, 0f );
 		mouseY += Input.GetAxis( "Mouse Y" ) * mouseSensitivity;
 		mouseY = Mathf.Clamp( mouseY, -80f, 85f );
@@ -90,8 +84,19 @@ public class JohnScript : CharacterBehavior {
 	}
 
 	public void Move(){
+
+		float horizontalMove = Input.GetAxisRaw ("Horizontal");
+		float verticalMove = Input.GetAxisRaw ("Vertical");
+		if (verticalMove != 0 || horizontalMove != 0) {
+			isMoving = true;
+		} else {
+			isMoving = false;
+		}
+		movedir = (transform.right * horizontalMove + transform.forward * verticalMove).normalized;
+		Look ();	
+
 		Vector3 yVelFix = new Vector3( 0, rb.velocity.y, 0 );
-		rb.velocity = movedir * moveSpeed * Time.unscaledDeltaTime;
+		rb.velocity = movedir * moveSpeed * Time.fixedDeltaTime;
 		rb.velocity += yVelFix;	//allows player to be affected by gravity
 
 		// Functionality for head bobbing -- only displayed when John is moving
