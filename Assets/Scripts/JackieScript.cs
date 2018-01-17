@@ -3,16 +3,18 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class JackieScript : CharacterBehavior {
+public class JackieScript : MonoBehaviour {
 
 	public NavMeshAgent navAI;
 	public GameObject johnref;
+	public CharacterBehavior cbref;
 
 	bool talktojohn;
 
 	// Use this for initialization
 	void Start () {
-		colorlist = new Dictionary<int, Color> ();
+		cbref = this.GetComponent<CharacterBehavior> ();
+		cbref.colorlist = new Dictionary<int, Color> ();
 		talktojohn = false;
 		navAI = this.GetComponent<NavMeshAgent> ();
 		johnref = GameObject.Find ("Player");
