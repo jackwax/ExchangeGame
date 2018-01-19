@@ -118,7 +118,7 @@ public class JohnScript : MonoBehaviour {
 
 
 	void FixedUpdate(){
-		print ("move called");
+		//print ("move called");
 		Move ();
 	}
 
