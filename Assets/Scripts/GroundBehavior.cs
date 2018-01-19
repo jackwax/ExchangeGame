@@ -18,11 +18,15 @@ public class GroundBehavior : MonoBehaviour {
 		aS = this.GetComponent<AudioSource> ();
 		cbref = this.GetComponent<CharacterBehavior> ();
 
+		aS.clip = groundtypes [0].ground_sound;
+
 		
 	}
 
 
 	void OnCollisionStay(Collision other){
+		//print (this.gameObject.name + " has collided with " + other.gameObject.name);
+
 		GameObject groundon = other.gameObject;
 		SetGround (groundon);
 		
@@ -79,14 +83,17 @@ public class GroundBehavior : MonoBehaviour {
 
 
 	void playSound(){
-		if (cbref.isMoving() == true && !aS.isPlaying){
+		if (!aS.isPlaying && cbref.isMoving() == true){
 			aS.Play ();
+			//print ("supposed to be playing");
 		}
+
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		playSound ();
+		//print ("are we rolling?");
 
 		
 	}
