@@ -1,38 +1,30 @@
 fileFormatVersion: 2
-guid: 4d000c466ce254499a62db38878b4c1f
-timeCreated: 1516307042
+guid: 071a998e99bd54c498d4003706d8b347
+timeCreated: 1516399927
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
-    100000: Boole_1
-    100002: CINEMA_4D_Editor
-    100004: Plane
-    100006: //RootNode
-    100008: Apartment_Model__scaled_diff_
-    100010: Apartment_Parent
-    100012: Roof
-    400000: Boole_1
-    400002: CINEMA_4D_Editor
-    400004: Plane
-    400006: //RootNode
-    400008: Apartment_Model__scaled_diff_
-    400010: Apartment_Parent
-    400012: Roof
+    100000: CINEMA_4D_Editor
+    100002: //RootNode
+    100004: Loft
+    100006: Toilet
+    100008: Toilet_Body
+    100010: Toilet_Seat
+    400000: CINEMA_4D_Editor
+    400002: //RootNode
+    400004: Loft
+    400006: Toilet
+    400008: Toilet_Body
+    400010: Toilet_Seat
     2000000: CINEMA_4D_Editor
     2100000: Mat
-    2300000: Boole_1
-    2300002: Plane
-    2300004: Apartment_Model__scaled_diff_
-    2300006: Roof
-    3300000: Boole_1
-    3300002: Plane
-    3300004: Apartment_Model__scaled_diff_
-    3300006: Roof
-    4300000: Boole_1
-    4300002: Plane
-    4300004: Apartment_Model__scaled_diff_
-    4300006: Roof
+    2300000: Toilet_Body
+    2300002: Toilet_Seat
+    3300000: Toilet_Body
+    3300002: Toilet_Seat
+    4300000: Toilet_Seat
+    4300002: Toilet_Body
     9500000: //RootNode
   externalObjects: {}
   materials:
@@ -69,7 +61,7 @@ ModelImporter:
     addColliders: 0
     importVisibility: 1
     importBlendShapes: 1
-    importCameras: 1
+    importCameras: 0
     importLights: 1
     swapUVChannels: 0
     generateSecondaryUV: 0
