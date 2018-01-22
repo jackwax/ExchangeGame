@@ -31,7 +31,7 @@ public class Interactable : MonoBehaviour {
 			if (Input.GetKeyUp (KeyCode.Mouse0)) {
 				/**Interact logic goes here. Objects should call their own interact methods**/
 				if (hoveredObject.tag == "touchable") {
-					hoveredObject.GetComponent<Thing> ().SendMessage ();
+					hoveredObject.GetComponent<Touchable> ().touchObject ();
 
 				} else if (hoveredObject.tag == "pickup") {
 					//hoveredObject.GetComponent<PickUp>().pickUp();

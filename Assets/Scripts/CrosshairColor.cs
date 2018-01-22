@@ -20,7 +20,7 @@ public class CrosshairColor : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (inc.isInteractable () == true) {
-			print ("this is true");
+			//print ("this is true");
 			chimg.color = new Color (1, 0, 0);
 		} else {
 			chimg.color = defColor;
