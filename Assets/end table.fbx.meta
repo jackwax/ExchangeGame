@@ -1,30 +1,48 @@
 fileFormatVersion: 2
-guid: 084fa285b2d49484e978006c6e63b1da
-timeCreated: 1516551835
+guid: 78d50443876be4029a5d4aac2cc3ef55
+timeCreated: 1516647783
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
-    100000: Boole
+    100000: Body
     100002: CINEMA_4D_Editor
-    100004: Cylinder
-    100006: Cylinder_2
-    100008: Extrude_1
+    100004: Drawer
+    100006: Drawer_Body
+    100008: Drawer_Handle
     100010: //RootNode
-    400000: Boole
+    100012: End_Table
+    100014: Stand
+    100016: Stand_bottom
+    100018: Stand_top
+    400000: Body
     400002: CINEMA_4D_Editor
-    400004: Cylinder
-    400006: Cylinder_2
-    400008: Extrude_1
+    400004: Drawer
+    400006: Drawer_Body
+    400008: Drawer_Handle
     400010: //RootNode
+    400012: End_Table
+    400014: Stand
+    400016: Stand_bottom
+    400018: Stand_top
     2000000: CINEMA_4D_Editor
-    2100000: No Name
-    2300000: Cylinder
-    2300002: Extrude_1
-    3300000: Cylinder
-    3300002: Extrude_1
-    4300000: Cylinder
-    4300002: Extrude_1
+    2100000: Mat
+    2300000: Body
+    2300002: Drawer_Body
+    2300004: Drawer_Handle
+    2300006: Stand_bottom
+    2300008: Stand_top
+    3300000: Body
+    3300002: Drawer_Body
+    3300004: Drawer_Handle
+    3300006: Stand_bottom
+    3300008: Stand_top
+    4300000: Stand_top
+    4300002: Stand_bottom
+    4300004: Drawer_Handle
+    4300006: Drawer_Body
+    4300008: Body
+    7400000: End_Table_Anim
     9500000: //RootNode
   externalObjects: {}
   materials:
@@ -52,7 +70,35 @@ ModelImporter:
     animationWrapMode: 0
     extraExposedTransformPaths: []
     extraUserProperties: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: End_Table_Anim
+      takeName: CINEMA_4D_Main
+      firstFrame: 0
+      lastFrame: 90
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     isReadable: 1
   meshes:
     lODScreenPercentages: []

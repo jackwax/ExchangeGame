@@ -33,7 +33,7 @@ ModelImporter:
     4300002: Middle_Drawer
     4300004: Bottom_Drawer
     4300006: Dresser_Body
-    7400000: CINEMA_4D_Main
+    7400000: Dresser_Anim
     9500000: //RootNode
     11100000: //RootNode
   externalObjects: {}
@@ -55,7 +55,7 @@ ModelImporter:
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
-    animationCompression: 1
+    animationCompression: 3
     animationRotationError: 0.5
     animationPositionError: 0.5
     animationScaleError: 0.5
@@ -64,7 +64,7 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: CINEMA_4D_Main
+      name: Dresser_Anim
       takeName: CINEMA_4D_Main
       firstFrame: 0
       lastFrame: 90
@@ -157,7 +157,7 @@ ModelImporter:
     hasExtraRoot: 1
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 1
+  animationType: 2
   humanoidOversampling: 1
   additionalBone: 0
   userData: 
