@@ -1,30 +1,43 @@
 fileFormatVersion: 2
-guid: 084fa285b2d49484e978006c6e63b1da
-timeCreated: 1516551835
+guid: ce0c86a0a9d2d4683a189f0825ca12fc
+timeCreated: 1516647783
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
-    100000: Boole
-    100002: CINEMA_4D_Editor
-    100004: Cylinder
-    100006: Cylinder_2
-    100008: Extrude_1
-    100010: //RootNode
-    400000: Boole
-    400002: CINEMA_4D_Editor
-    400004: Cylinder
-    400006: Cylinder_2
-    400008: Extrude_1
-    400010: //RootNode
+    100000: Bed
+    100002: //RootNode
+    100004: CINEMA_4D_Editor
+    100006: Cover
+    100008: Frame
+    100010: left_pillow
+    100012: Mattress
+    100014: Right_pillow
+    400000: Bed
+    400002: //RootNode
+    400004: CINEMA_4D_Editor
+    400006: Cover
+    400008: Frame
+    400010: left_pillow
+    400012: Mattress
+    400014: Right_pillow
     2000000: CINEMA_4D_Editor
-    2100000: No Name
-    2300000: Cylinder
-    2300002: Extrude_1
-    3300000: Cylinder
-    3300002: Extrude_1
-    4300000: Cylinder
-    4300002: Extrude_1
+    2100000: Mat
+    2300000: Cover
+    2300002: Frame
+    2300004: left_pillow
+    2300006: Mattress
+    2300008: Right_pillow
+    3300000: Cover
+    3300002: Frame
+    3300004: left_pillow
+    3300006: Mattress
+    3300008: Right_pillow
+    4300000: Cover
+    4300002: Mattress
+    4300004: Right_pillow
+    4300006: left_pillow
+    4300008: Frame
     9500000: //RootNode
   externalObjects: {}
   materials:
