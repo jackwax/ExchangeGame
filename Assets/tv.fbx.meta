@@ -1,60 +1,67 @@
 fileFormatVersion: 2
-guid: 52a96097628fe401da9088958bdbf49b
-timeCreated: 1516551846
+guid: a0d7c20966ed74185ad01294f5afa76f
+timeCreated: 1516763383
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
-    100000: Bottom_Drawer
-    100002: CINEMA_4D_Editor
+    100000: CINEMA_4D_Editor
+    100002: Cube
     100004: Cube_1
     100006: Cube_2
     100008: Cube_3
     100010: Cube_4
     100012: Cube_5
     100014: Cube_6
-    100016: Dresser
-    100018: Dresser_Body
-    100020: //RootNode
-    100022: Middle_Drawer
-    100024: Top_Drawer
-    400000: Bottom_Drawer
-    400002: CINEMA_4D_Editor
+    100016: Cube_7
+    100018: Cube_8
+    100020: TV
+    100022: //RootNode
+    100024: TV_base
+    400000: CINEMA_4D_Editor
+    400002: Cube
     400004: Cube_1
     400006: Cube_2
     400008: Cube_3
     400010: Cube_4
     400012: Cube_5
     400014: Cube_6
-    400016: Dresser
-    400018: Dresser_Body
-    400020: //RootNode
-    400022: Middle_Drawer
-    400024: Top_Drawer
+    400016: Cube_7
+    400018: Cube_8
+    400020: TV
+    400022: //RootNode
+    400024: TV_base
     2000000: CINEMA_4D_Editor
     2100000: No Name
-    2300000: Cube_1
-    2300002: Cube_2
-    2300004: Cube_3
-    2300006: Cube_4
-    2300008: Cube_5
-    2300010: Cube_6
-    2300012: Dresser_Body
-    3300000: Cube_1
-    3300002: Cube_2
-    3300004: Cube_3
-    3300006: Cube_4
-    3300008: Cube_5
-    3300010: Cube_6
-    3300012: Dresser_Body
-    4300000: Cube_4
-    4300002: Cube_3
-    4300004: Cube_2
-    4300006: Cube_1
-    4300008: Cube_6
-    4300010: Cube_5
-    4300012: Dresser_Body
-    7400000: CINEMA_4D_Main
+    2100002: Mat.1
+    2100004: Mat
+    2300000: Cube
+    2300002: Cube_1
+    2300004: Cube_2
+    2300006: Cube_3
+    2300008: Cube_4
+    2300010: Cube_5
+    2300012: Cube_6
+    2300014: Cube_7
+    2300016: Cube_8
+    3300000: Cube
+    3300002: Cube_1
+    3300004: Cube_2
+    3300006: Cube_3
+    3300008: Cube_4
+    3300010: Cube_5
+    3300012: Cube_6
+    3300014: Cube_7
+    3300016: Cube_8
+    4300000: Cube_8
+    4300002: Cube_7
+    4300004: Cube_3
+    4300006: Cube_6
+    4300008: Cube_5
+    4300010: Cube_4
+    4300012: Cube_2
+    4300014: Cube_1
+    4300016: Cube
     9500000: //RootNode
   externalObjects: {}
   materials:
@@ -91,7 +98,7 @@ ModelImporter:
     addColliders: 0
     importVisibility: 1
     importBlendShapes: 1
-    importCameras: 1
+    importCameras: 0
     importLights: 1
     swapUVChannels: 0
     generateSecondaryUV: 0

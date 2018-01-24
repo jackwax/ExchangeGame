@@ -1,51 +1,33 @@
 fileFormatVersion: 2
-guid: 78d50443876be4029a5d4aac2cc3ef55
-timeCreated: 1516647783
+guid: 70efdb099e7514378ae3247d19022052
+timeCreated: 1516763382
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
-    100000: Body
-    100002: CINEMA_4D_Editor
-    100004: Drawer
-    100006: Drawer_Body
-    100008: Drawer_Handle
-    100010: //RootNode
-    100012: End_Table
-    100014: Stand
-    100016: Stand_bottom
-    100018: Stand_top
-    400000: Body
-    400002: CINEMA_4D_Editor
-    400004: Drawer
-    400006: Drawer_Body
-    400008: Drawer_Handle
-    400010: //RootNode
-    400012: End_Table
-    400014: Stand
-    400016: Stand_bottom
-    400018: Stand_top
+    100000: Boole_1
+    100002: //RootNode
+    100004: CINEMA_4D_Editor
+    100006: Cylinder
+    100008: Cylinder_2
+    400000: Boole_1
+    400002: //RootNode
+    400004: CINEMA_4D_Editor
+    400006: Cylinder
+    400008: Cylinder_2
     2000000: CINEMA_4D_Editor
     2100000: Mat
-    2300000: Body
-    2300002: Drawer_Body
-    2300004: Drawer_Handle
-    2300006: Stand_bottom
-    2300008: Stand_top
-    2300010: Stand
-    3300000: Body
-    3300002: Drawer_Body
-    3300004: Drawer_Handle
-    3300006: Stand_bottom
-    3300008: Stand_top
-    3300010: Stand
-    4300000: Stand_top
-    4300002: Stand_bottom
-    4300004: Drawer_Handle
-    4300006: Drawer_Body
-    4300008: Body
-    4300010: Stand
-    7400000: End_Table_Anim
+    2100002: Mat.1
+    2300000: Boole_1
+    2300002: Cylinder
+    2300004: Cylinder_2
+    3300000: Boole_1
+    3300002: Cylinder
+    3300004: Cylinder_2
+    4300000: Boole_1
+    4300002: Cylinder_2
+    4300004: Cylinder
+    7400000: Ceiling_Fan_Anim
     9500000: //RootNode
   externalObjects: {}
   materials:
@@ -75,10 +57,10 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: End_Table_Anim
+      name: Ceiling_Fan_Anim
       takeName: CINEMA_4D_Main
       firstFrame: 0
-      lastFrame: 90
+      lastFrame: 89
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
