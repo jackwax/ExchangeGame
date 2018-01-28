@@ -1,21 +1,28 @@
 fileFormatVersion: 2
-guid: 6432920e9642743c8af002f94bd557a9
-timeCreated: 1516914208
+guid: fffbccd825d62f6499bbaba698f21807
+timeCreated: 1516989099
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
     100000: CINEMA_4D_Editor
-    100002: Cube
-    100004: //RootNode
+    100002: //RootNode
+    100004: Stool
+    100006: Stool_Cushion
+    100008: Stool_Stand
     400000: CINEMA_4D_Editor
-    400002: Cube
-    400004: //RootNode
+    400002: //RootNode
+    400004: Stool
+    400006: Stool_Cushion
+    400008: Stool_Stand
     2000000: CINEMA_4D_Editor
     2100000: Mat
-    2300000: Cube
-    3300000: Cube
-    4300000: Cube
+    2300000: Stool_Cushion
+    2300002: Stool_Stand
+    3300000: Stool_Cushion
+    3300002: Stool_Stand
+    4300000: Stool_Stand
+    4300002: Stool_Cushion
     9500000: //RootNode
   externalObjects: {}
   materials:
@@ -52,7 +59,7 @@ ModelImporter:
     addColliders: 0
     importVisibility: 1
     importBlendShapes: 1
-    importCameras: 0
+    importCameras: 1
     importLights: 1
     swapUVChannels: 0
     generateSecondaryUV: 0

@@ -8,7 +8,7 @@ public class Interactable : MonoBehaviour {
 
 	public Image crosshair;
 
-	GameObject hoveredObject;
+	private GameObject hoveredObject;
 
 
 
@@ -44,6 +44,15 @@ public class Interactable : MonoBehaviour {
 		}
 		
 	}
+
+	public GameObject getHoveredObject(){
+		return hoveredObject;
+	}
+
+
+
+
+
 
 	/**to determine whether the thing in the crosshair is interactable**/
 	public bool isInteractable(){

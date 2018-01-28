@@ -12,6 +12,11 @@ public class Touchable : MonoBehaviour {
 	private Animator obj_controller;
 	int objID;
 
+	public bool retouchable;
+
+
+	//potentially need collision detection for children???
+
 
 
 	// Use this for initialization
@@ -29,9 +34,22 @@ public class Touchable : MonoBehaviour {
 	}**/
 	public void touchObject(){
 		bool isPlaying = obj_controller.GetBool (objID);
-		if (!isPlaying) {
-			obj_controller.SetBool ("isPlaying", true);
-			StartCoroutine (PlayRevAnim ());
+		if (retouchable) {
+			if (!isPlaying) {
+				obj_controller.SetBool ("isPlaying", true);
+			} else {
+				obj_controller.SetBool ("isPlaying", false);
+			}
+
+
+		} else {
+
+
+
+			if (!isPlaying) {
+				obj_controller.SetBool ("isPlaying", true);
+				StartCoroutine (PlayRevAnim ());
+			}
 		}
 	}
 
