@@ -1,51 +1,40 @@
 fileFormatVersion: 2
-guid: 78d50443876be4029a5d4aac2cc3ef55
-timeCreated: 1516647783
+guid: 755069f830fb6084cbf84531ae45e2eb
+timeCreated: 1517170406
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
-    100000: Body
-    100002: CINEMA_4D_Editor
-    100004: Drawer
-    100006: Drawer_Body
-    100008: Drawer_Handle
+    100000: CINEMA_4D_Editor
+    100002: Island_Body
+    100004: Island_left_handle
+    100006: Island_right_handle
+    100008: Island_sink
     100010: //RootNode
-    100012: End_Table
-    100014: Stand
-    100016: Stand_bottom
-    100018: Stand_top
-    400000: Body
-    400002: CINEMA_4D_Editor
-    400004: Drawer
-    400006: Drawer_Body
-    400008: Drawer_Handle
+    100012: Null
+    400000: CINEMA_4D_Editor
+    400002: Island_Body
+    400004: Island_left_handle
+    400006: Island_right_handle
+    400008: Island_sink
     400010: //RootNode
-    400012: End_Table
-    400014: Stand
-    400016: Stand_bottom
-    400018: Stand_top
+    400012: Null
     2000000: CINEMA_4D_Editor
-    2100000: Mat
-    2300000: Body
-    2300002: Drawer_Body
-    2300004: Drawer_Handle
-    2300006: Stand_bottom
-    2300008: Stand_top
-    2300010: Stand
-    3300000: Body
-    3300002: Drawer_Body
-    3300004: Drawer_Handle
-    3300006: Stand_bottom
-    3300008: Stand_top
-    3300010: Stand
-    4300000: Stand_top
-    4300002: Stand_bottom
-    4300004: Drawer_Handle
-    4300006: Drawer_Body
-    4300008: Body
-    4300010: Stand
-    7400000: End_Table_Anim
+    2100000: Mat2
+    2100002: Mat
+    2300000: Island_Body
+    2300002: Island_left_handle
+    2300004: Island_right_handle
+    2300006: Island_sink
+    3300000: Island_Body
+    3300002: Island_left_handle
+    3300004: Island_right_handle
+    3300006: Island_sink
+    4300000: Island_sink
+    4300002: Island_left_handle
+    4300004: Island_right_handle
+    4300006: Island_Body
+    7400000: CINEMA_4D_Main
     9500000: //RootNode
   externalObjects: {}
   materials:
@@ -73,35 +62,7 @@ ModelImporter:
     animationWrapMode: 0
     extraExposedTransformPaths: []
     extraUserProperties: []
-    clipAnimations:
-    - serializedVersion: 16
-      name: End_Table_Anim
-      takeName: CINEMA_4D_Main
-      firstFrame: 0
-      lastFrame: 90
-      wrapMode: 0
-      orientationOffsetY: 0
-      level: 0
-      cycleOffset: 0
-      loop: 0
-      hasAdditiveReferencePose: 0
-      loopTime: 0
-      loopBlend: 0
-      loopBlendOrientation: 0
-      loopBlendPositionY: 0
-      loopBlendPositionXZ: 0
-      keepOriginalOrientation: 0
-      keepOriginalPositionY: 1
-      keepOriginalPositionXZ: 0
-      heightFromFeet: 0
-      mirror: 0
-      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
-      curves: []
-      events: []
-      transformMask: []
-      maskType: 3
-      maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 0
+    clipAnimations: []
     isReadable: 1
   meshes:
     lODScreenPercentages: []
@@ -110,7 +71,7 @@ ModelImporter:
     addColliders: 0
     importVisibility: 1
     importBlendShapes: 1
-    importCameras: 0
+    importCameras: 1
     importLights: 1
     swapUVChannels: 0
     generateSecondaryUV: 0
