@@ -1,75 +1,28 @@
 fileFormatVersion: 2
-guid: a0d7c20966ed74185ad01294f5afa76f
-timeCreated: 1516763383
+guid: fffbccd825d62f6499bbaba698f21807
+timeCreated: 1516989099
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
     100000: CINEMA_4D_Editor
-    100002: Cube
-    100004: Cube_1
-    100006: Cube_2
-    100008: Cube_3
-    100010: Cube_4
-    100012: Cube_5
-    100014: Cube_6
-    100016: Cube_7
-    100018: Cube_8
-    100020: TV
-    100022: //RootNode
-    100024: TV_base
-    100026: TV_Base
+    100002: //RootNode
+    100004: Stool
+    100006: Stool_Cushion
+    100008: Stool_Stand
     400000: CINEMA_4D_Editor
-    400002: Cube
-    400004: Cube_1
-    400006: Cube_2
-    400008: Cube_3
-    400010: Cube_4
-    400012: Cube_5
-    400014: Cube_6
-    400016: Cube_7
-    400018: Cube_8
-    400020: TV
-    400022: //RootNode
-    400024: TV_base
-    400026: TV_Base
+    400002: //RootNode
+    400004: Stool
+    400006: Stool_Cushion
+    400008: Stool_Stand
     2000000: CINEMA_4D_Editor
-    2100000: No Name
-    2100002: Mat.1
-    2100004: Mat
-    2300000: Cube
-    2300002: Cube_1
-    2300004: Cube_2
-    2300006: Cube_3
-    2300008: Cube_4
-    2300010: Cube_5
-    2300012: Cube_6
-    2300014: Cube_7
-    2300016: Cube_8
-    2300018: TV
-    2300020: TV_Base
-    3300000: Cube
-    3300002: Cube_1
-    3300004: Cube_2
-    3300006: Cube_3
-    3300008: Cube_4
-    3300010: Cube_5
-    3300012: Cube_6
-    3300014: Cube_7
-    3300016: Cube_8
-    3300018: TV
-    3300020: TV_Base
-    4300000: Cube_8
-    4300002: Cube_7
-    4300004: Cube_3
-    4300006: Cube_6
-    4300008: Cube_5
-    4300010: Cube_4
-    4300012: Cube_2
-    4300014: Cube_1
-    4300016: Cube
-    4300018: TV
-    4300020: TV_Base
+    2100000: Mat
+    2300000: Stool_Cushion
+    2300002: Stool_Stand
+    3300000: Stool_Cushion
+    3300002: Stool_Stand
+    4300000: Stool_Stand
+    4300002: Stool_Cushion
     9500000: //RootNode
   externalObjects: {}
   materials:
