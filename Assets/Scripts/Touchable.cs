@@ -9,6 +9,14 @@ public class Touchable : MonoBehaviour {
 	bool completed;
 
 
+	private Animator obj_controller;
+	int objID;
+
+	public bool retouchable;
+
+
+	//potentially need collision detection for children???
+
 
 
 	// Use this for initialization
@@ -16,12 +24,44 @@ public class Touchable : MonoBehaviour {
 		fxs = this.gameObject.AddComponent<AudioSource> ();
 		isActive = false;
 		completed = false;
+		obj_controller = this.gameObject.GetComponent<Animator> ();
+		objID = Animator.StringToHash ("isPlaying");
 	}
 
 
 	/**public void SetAudio(string clipname){
 		fxs = clipname;
 	}**/
+	public void touchObject(){
+		bool isPlaying = obj_controller.GetBool (objID);
+		if (retouchable) {
+			if (!isPlaying) {
+				obj_controller.SetBool ("isPlaying", true);
+			} else {
+				obj_controller.SetBool ("isPlaying", false);
+			}
+
+
+		} else {
+
+
+
+			if (!isPlaying) {
+				obj_controller.SetBool ("isPlaying", true);
+				StartCoroutine (PlayRevAnim ());
+			}
+		}
+	}
+
+	IEnumerator PlayRevAnim(){
+		yield return new WaitForSeconds(2.0f);
+		obj_controller.SetBool ("isPlaying", false);
+
+
+	}
+
+
+
 	
 	// Update is called once per frame
 	void Update () {

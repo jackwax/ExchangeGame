@@ -1,4 +1,4 @@
-﻿using System.Collections;
+﻿	using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -8,7 +8,7 @@ public class Interactable : MonoBehaviour {
 
 	public Image crosshair;
 
-	GameObject hoveredObject;
+	private GameObject hoveredObject;
 
 
 
@@ -31,19 +31,36 @@ public class Interactable : MonoBehaviour {
 			if (Input.GetKeyUp (KeyCode.Mouse0)) {
 				/**Interact logic goes here. Objects should call their own interact methods**/
 				if (hoveredObject.tag == "touchable") {
-					hoveredObject.GetComponent<Thing> ().SendMessage ();
+					hoveredObject.GetComponent<Touchable> ().touchObject ();
 
 				} else if (hoveredObject.tag == "pickup") {
 					//hoveredObject.GetComponent<PickUp>().pickUp();
 				} else if (hoveredObject.tag == "door") {
-					hoveredObject.GetComponentInParent<DoorHandler> ().touchDoor();
+					hoveredObject.GetComponentInParent<DoorHandler> ().touchDoor ();
+				} else if (hoveredObject.tag == "baggable") {
+					//player calls inventory methods with the parameter of the item.
+					//What do we need from the item?
+					//there are 3 items that we need: hair, underwear
+					//do we really need anyhting besides a bool?
+
 				}
+
+
 
 			}
 
 		}
 		
 	}
+
+	public GameObject getHoveredObject(){
+		return hoveredObject;
+	}
+
+
+
+
+
 
 	/**to determine whether the thing in the crosshair is interactable**/
 	public bool isInteractable(){
