@@ -36,8 +36,16 @@ public class Interactable : MonoBehaviour {
 				} else if (hoveredObject.tag == "pickup") {
 					//hoveredObject.GetComponent<PickUp>().pickUp();
 				} else if (hoveredObject.tag == "door") {
-					hoveredObject.GetComponentInParent<DoorHandler> ().touchDoor();
+					hoveredObject.GetComponentInParent<DoorHandler> ().touchDoor ();
+				} else if (hoveredObject.tag == "baggable") {
+					//player calls inventory methods with the parameter of the item.
+					//What do we need from the item?
+					//there are 3 items that we need: hair, underwear
+					//do we really need anyhting besides a bool?
+
 				}
+
+
 
 			}
 
