@@ -1,30 +1,31 @@
 fileFormatVersion: 2
-guid: 084fa285b2d49484e978006c6e63b1da
-timeCreated: 1516551835
+guid: e935d7a9e6acb460eb7a490b84b56abe
+timeCreated: 1518219020
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
-    100000: Boole
-    100002: CINEMA_4D_Editor
-    100004: Cylinder
-    100006: Cylinder_2
-    100008: Extrude_1
-    100010: //RootNode
-    400000: Boole
-    400002: CINEMA_4D_Editor
-    400004: Cylinder
-    400006: Cylinder_2
-    400008: Extrude_1
-    400010: //RootNode
+    100000: CINEMA_4D_Editor
+    100002: //RootNode
+    100004: End_Table
+    100006: End_Table_Body
+    100008: End_Table_Drawer
+    400000: CINEMA_4D_Editor
+    400002: //RootNode
+    400004: End_Table
+    400006: End_Table_Body
+    400008: End_Table_Drawer
     2000000: CINEMA_4D_Editor
-    2100000: No Name
-    2300000: Cylinder
-    2300002: Extrude_1
-    3300000: Cylinder
-    3300002: Extrude_1
-    4300000: Cylinder
-    4300002: Extrude_1
+    2100000: Silver - Macro Scratches
+    2100002: No Name
+    2100004: Mat
+    2300000: End_Table_Body
+    2300002: End_Table_Drawer
+    3300000: End_Table_Body
+    3300002: End_Table_Drawer
+    4300000: End_Table_Body
+    4300002: End_Table_Drawer
+    7400000: CINEMA_4D_Main
     9500000: //RootNode
   externalObjects: {}
   materials:

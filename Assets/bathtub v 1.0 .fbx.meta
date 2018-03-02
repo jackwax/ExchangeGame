@@ -18,6 +18,9 @@ ModelImporter:
     100020: Sphere
     100022: Sphere_1
     100024: Subdivision_Surface
+    100026: Bathtub
+    100028: Drain
+    100030: Tub
     400000: //RootNode
     400002: Boole_1
     400004: Boole_1_2
@@ -31,6 +34,9 @@ ModelImporter:
     400020: Sphere
     400022: Sphere_1
     400024: Subdivision_Surface
+    400026: Bathtub
+    400028: Drain
+    400030: Tub
     2000000: CINEMA_4D_Editor
     2100000: No Name
     2300000: Boole_1
@@ -41,6 +47,7 @@ ModelImporter:
     2300010: Faucet
     2300012: Sphere
     2300014: Sphere_1
+    2300016: Tub
     3300000: Boole_1
     3300002: Boole_1_2
     3300004: Cube
@@ -49,6 +56,7 @@ ModelImporter:
     3300010: Faucet
     3300012: Sphere
     3300014: Sphere_1
+    3300016: Tub
     4300000: Sphere_1
     4300002: Sphere
     4300004: Cylinder
@@ -57,6 +65,7 @@ ModelImporter:
     4300010: Cylinder_3
     4300012: Faucet
     4300014: Cube
+    4300016: Tub
     7400000: CINEMA_4D_Main
     9500000: //RootNode
   externalObjects: {}
@@ -94,7 +103,7 @@ ModelImporter:
     addColliders: 0
     importVisibility: 1
     importBlendShapes: 1
-    importCameras: 1
+    importCameras: 0
     importLights: 1
     swapUVChannels: 0
     generateSecondaryUV: 0

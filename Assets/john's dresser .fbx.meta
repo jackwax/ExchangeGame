@@ -1,38 +1,56 @@
 fileFormatVersion: 2
-guid: 52a96097628fe401da9088958bdbf49b
-timeCreated: 1516551846
+guid: 44565ac63b18849b09a2f8dd4d16b98d
+timeCreated: 1518219005
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
     100000: Bottom_Drawer
     100002: CINEMA_4D_Editor
-    100004: Cube_1
-    100006: Cube_2
-    100008: Cube_3
-    100010: Cube_4
-    100012: Cube_5
-    100014: Cube_6
-    100016: Dresser
-    100018: Dresser_Body
-    100020: //RootNode
-    100022: Middle_Drawer
-    100024: Top_Drawer
+    100004: Clothes
+    100006: Cube_1
+    100008: Cube_2
+    100010: Cube_3
+    100012: Cube_4
+    100014: Cube_5
+    100016: Cube_6
+    100018: Dresser
+    100020: Dresser_Body
+    100022: //RootNode
+    100024: Middle_Drawer
+    100026: Subdivision_Surface
+    100028: Subdivision_Surface_1
+    100030: Subdivision_Surface_2
+    100032: Subdivision_Surface_3
+    100034: Subdivision_Surface_4
+    100036: Subdivision_Surface_5
+    100038: Subdivision_Surface_6
+    100040: Top_Drawer
     400000: Bottom_Drawer
     400002: CINEMA_4D_Editor
-    400004: Cube_1
-    400006: Cube_2
-    400008: Cube_3
-    400010: Cube_4
-    400012: Cube_5
-    400014: Cube_6
-    400016: Dresser
-    400018: Dresser_Body
-    400020: //RootNode
-    400022: Middle_Drawer
-    400024: Top_Drawer
+    400004: Clothes
+    400006: Cube_1
+    400008: Cube_2
+    400010: Cube_3
+    400012: Cube_4
+    400014: Cube_5
+    400016: Cube_6
+    400018: Dresser
+    400020: Dresser_Body
+    400022: //RootNode
+    400024: Middle_Drawer
+    400026: Subdivision_Surface
+    400028: Subdivision_Surface_1
+    400030: Subdivision_Surface_2
+    400032: Subdivision_Surface_3
+    400034: Subdivision_Surface_4
+    400036: Subdivision_Surface_5
+    400038: Subdivision_Surface_6
+    400040: Top_Drawer
     2000000: CINEMA_4D_Editor
-    2100000: No Name
+    2100000: Mat
+    2100002: Silver - Macro Scratches
+    2100004: Mat.1
     2300000: Cube_1
     2300002: Cube_2
     2300004: Cube_3
@@ -40,6 +58,13 @@ ModelImporter:
     2300008: Cube_5
     2300010: Cube_6
     2300012: Dresser_Body
+    2300014: Subdivision_Surface
+    2300016: Subdivision_Surface_1
+    2300018: Subdivision_Surface_2
+    2300020: Subdivision_Surface_3
+    2300022: Subdivision_Surface_4
+    2300024: Subdivision_Surface_5
+    2300026: Subdivision_Surface_6
     3300000: Cube_1
     3300002: Cube_2
     3300004: Cube_3
@@ -47,13 +72,27 @@ ModelImporter:
     3300008: Cube_5
     3300010: Cube_6
     3300012: Dresser_Body
-    4300000: Cube_4
-    4300002: Cube_3
-    4300004: Cube_2
-    4300006: Cube_1
-    4300008: Cube_6
-    4300010: Cube_5
-    4300012: Dresser_Body
+    3300014: Subdivision_Surface
+    3300016: Subdivision_Surface_1
+    3300018: Subdivision_Surface_2
+    3300020: Subdivision_Surface_3
+    3300022: Subdivision_Surface_4
+    3300024: Subdivision_Surface_5
+    3300026: Subdivision_Surface_6
+    4300000: Subdivision_Surface_6
+    4300002: Subdivision_Surface_5
+    4300004: Subdivision_Surface_4
+    4300006: Subdivision_Surface_3
+    4300008: Subdivision_Surface_2
+    4300010: Subdivision_Surface_1
+    4300012: Subdivision_Surface
+    4300014: Cube_4
+    4300016: Cube_3
+    4300018: Cube_2
+    4300020: Cube_1
+    4300022: Cube_6
+    4300024: Cube_5
+    4300026: Dresser_Body
     7400000: CINEMA_4D_Main
     9500000: //RootNode
   externalObjects: {}
@@ -91,7 +130,7 @@ ModelImporter:
     addColliders: 0
     importVisibility: 1
     importBlendShapes: 1
-    importCameras: 1
+    importCameras: 0
     importLights: 1
     swapUVChannels: 0
     generateSecondaryUV: 0

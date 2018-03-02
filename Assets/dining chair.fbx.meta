@@ -1,30 +1,34 @@
 fileFormatVersion: 2
-guid: 084fa285b2d49484e978006c6e63b1da
-timeCreated: 1516551835
+guid: 8d7ec2303596246d4b10ddc046994e77
+timeCreated: 1518219017
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
-    100000: Boole
+    100000: Back_Cushion_
     100002: CINEMA_4D_Editor
-    100004: Cylinder
-    100006: Cylinder_2
-    100008: Extrude_1
-    100010: //RootNode
-    400000: Boole
+    100004: //RootNode
+    100006: Dining_Chair
+    100008: Legs
+    100010: Top_Cushion
+    400000: Back_Cushion_
     400002: CINEMA_4D_Editor
-    400004: Cylinder
-    400006: Cylinder_2
-    400008: Extrude_1
-    400010: //RootNode
+    400004: //RootNode
+    400006: Dining_Chair
+    400008: Legs
+    400010: Top_Cushion
     2000000: CINEMA_4D_Editor
-    2100000: No Name
-    2300000: Cylinder
-    2300002: Extrude_1
-    3300000: Cylinder
-    3300002: Extrude_1
-    4300000: Cylinder
-    4300002: Extrude_1
+    2100000: Mat
+    2100002: Mat.1
+    2300000: Back_Cushion_
+    2300002: Legs
+    2300004: Top_Cushion
+    3300000: Back_Cushion_
+    3300002: Legs
+    3300004: Top_Cushion
+    4300000: Legs
+    4300002: Back_Cushion_
+    4300004: Top_Cushion
     9500000: //RootNode
   externalObjects: {}
   materials:

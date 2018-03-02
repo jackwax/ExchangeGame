@@ -1,30 +1,31 @@
 fileFormatVersion: 2
-guid: 084fa285b2d49484e978006c6e63b1da
-timeCreated: 1516551835
+guid: fdc2fb519fccf4c76b53e7a71db73050
+timeCreated: 1518219021
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
-    100000: Boole
-    100002: CINEMA_4D_Editor
-    100004: Cylinder
-    100006: Cylinder_2
-    100008: Extrude_1
-    100010: //RootNode
-    400000: Boole
-    400002: CINEMA_4D_Editor
-    400004: Cylinder
-    400006: Cylinder_2
-    400008: Extrude_1
-    400010: //RootNode
+    100000: CINEMA_4D_Editor
+    100002: //RootNode
+    100004: Cube
+    100006: Sweep
+    100008: Sweep_1
+    400000: CINEMA_4D_Editor
+    400002: //RootNode
+    400004: Cube
+    400006: Sweep
+    400008: Sweep_1
     2000000: CINEMA_4D_Editor
-    2100000: No Name
-    2300000: Cylinder
-    2300002: Extrude_1
-    3300000: Cylinder
-    3300002: Extrude_1
-    4300000: Cylinder
-    4300002: Extrude_1
+    2100000: Mat
+    2300000: Cube
+    2300002: Sweep
+    2300004: Sweep_1
+    3300000: Cube
+    3300002: Sweep
+    3300004: Sweep_1
+    4300000: Sweep
+    4300002: Sweep_1
+    4300004: Cube
     9500000: //RootNode
   externalObjects: {}
   materials:
