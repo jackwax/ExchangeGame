@@ -64,7 +64,8 @@ public class Interactable : MonoBehaviour {
 
 	/**to determine whether the thing in the crosshair is interactable**/
 	public bool isInteractable(){
-		Ray romano = Camera.main.ScreenPointToRay (Input.mousePosition);
+		//Ray romano = Camera.main.ScreenPointToRay (Input.mousePosition);
+		Ray romano = new Ray(Camera.main.transform.position, Camera.main.transform.forward * 2f);
 		RaycastHit hit = new RaycastHit ();
 
 		Debug.DrawRay (romano.origin, romano.direction * 2f, Color.green);

@@ -27,14 +27,14 @@ public class CharacterBehavior : MonoBehaviour {
 
 	// Use this for initialization
 	public void CharacterInitialization(){
-		colorlist = new Dictionary<int, Color> ();
+		//colorlist = new Dictionary<int, Color> ();
 
 		mood = 0;
 	}
 
-	public void AddColor(int index, Color col){
-		colorlist.Add (index, col);
-	}
+//	public void AddColor(int index, Color col){
+//		colorlist.Add (index, col);
+//	}
 
 
 	public bool isMoving(){

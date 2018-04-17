@@ -37,21 +37,21 @@ public class JohnScript : MonoBehaviour {
 	}
 
 	void InitColor(){
-		cbref.AddColor (-7, new Color (32/255f, 0, 0, 1f));
-		cbref.AddColor (-6, new Color (43/255f, 4/255f, 4/255f, 1f));
-		cbref.AddColor (-5, new Color(49/255f, 10/255f, 10/255f, 1f ));
-		cbref.AddColor (-4, new Color (99/255f, 22/255f, 22/255f, 1f));
-		cbref.AddColor (-3, new Color (120/255f, 27/255f, 27/255f, 1f));
-		cbref.AddColor (-2, new Color (150/255f, 35/255f, 35/255f, 1f));
-		cbref.AddColor (-1, new Color (165/255f, 25/255f, 25/255f, 1f));
-		cbref.AddColor (0, new Color (182/255f, 55/255f, 55/255f, 1f));
-		cbref.AddColor (1, new Color (192/255f, 16/255f, 25/255f, 1f));
-		cbref.AddColor (2, new Color (208/255f, 16/255f, 25/255f, 1f));
-		cbref.AddColor (3, new Color (231/255f, 20/255f, 30/255f, 1f));
-		cbref.AddColor (4, new Color (231/255f, 57/255f, 30/255f, 1f));
-		cbref.AddColor (5, new Color (246/255f, 12/255f, 0, 1f));
-		cbref.AddColor (6, new Color (255/255f, 13/255f, 0, 1f));
-		cbref.AddColor (7, new Color (255/255f, 61/255f, 51/255f, 1f));
+//		cbref.AddColor (-7, new Color (32/255f, 0, 0, 1f));
+//		cbref.AddColor (-6, new Color (43/255f, 4/255f, 4/255f, 1f));
+//		cbref.AddColor (-5, new Color(49/255f, 10/255f, 10/255f, 1f ));
+//		cbref.AddColor (-4, new Color (99/255f, 22/255f, 22/255f, 1f));
+//		cbref.AddColor (-3, new Color (120/255f, 27/255f, 27/255f, 1f));
+//		cbref.AddColor (-2, new Color (150/255f, 35/255f, 35/255f, 1f));
+//		cbref.AddColor (-1, new Color (165/255f, 25/255f, 25/255f, 1f));
+//		cbref.AddColor (0, new Color (182/255f, 55/255f, 55/255f, 1f));
+//		cbref.AddColor (1, new Color (192/255f, 16/255f, 25/255f, 1f));
+//		cbref.AddColor (2, new Color (208/255f, 16/255f, 25/255f, 1f));
+//		cbref.AddColor (3, new Color (231/255f, 20/255f, 30/255f, 1f));
+//		cbref.AddColor (4, new Color (231/255f, 57/255f, 30/255f, 1f));
+//		cbref.AddColor (5, new Color (246/255f, 12/255f, 0, 1f));
+//		cbref.AddColor (6, new Color (255/255f, 13/255f, 0, 1f));
+//		cbref.AddColor (7, new Color (255/255f, 61/255f, 51/255f, 1f));
 	}
 
 
