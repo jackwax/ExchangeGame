@@ -26,6 +26,8 @@ public class JohnScript : MonoBehaviour {
 
 	CharacterBehavior cbref;
 
+	bool lockMovement = false;
+
 
 
 	// Use this for initialization
@@ -52,6 +54,11 @@ public class JohnScript : MonoBehaviour {
 //		cbref.AddColor (5, new Color (246/255f, 12/255f, 0, 1f));
 //		cbref.AddColor (6, new Color (255/255f, 13/255f, 0, 1f));
 //		cbref.AddColor (7, new Color (255/255f, 61/255f, 51/255f, 1f));
+	}
+
+
+	public bool MovementLocked(){
+		return lockMovement;
 	}
 
 
@@ -118,8 +125,10 @@ public class JohnScript : MonoBehaviour {
 
 
 	void FixedUpdate(){
-		//print ("move called");
-		Move ();
+		if (MovementLocked() == false) {
+			//print ("move called");
+			Move ();
+		}
 	}
 
 }

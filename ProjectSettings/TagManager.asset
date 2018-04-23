@@ -10,6 +10,7 @@ TagManager:
   - tile
   - wood
   - baggable
+  - note
   layers:
   - Default
   - TransparentFX

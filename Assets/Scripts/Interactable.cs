@@ -10,6 +10,8 @@ public class Interactable : MonoBehaviour {
 
 	private GameObject hoveredObject;
 
+	private GameObject player_ref;
+
 
 
 	// Use this for initialization
@@ -17,6 +19,7 @@ public class Interactable : MonoBehaviour {
 		mc = Camera.main;
 
 		crosshair = GameObject.Find ("Crosshair").GetComponent<Image>();
+		player_ref = GameObject.Find ("player");
 
 
 		
@@ -43,7 +46,14 @@ public class Interactable : MonoBehaviour {
 					//there are 3 items that we need: hair, underwear
 					//do we really need anyhting besides a bool?
 
+				} else if (hoveredObject.tag == "note") {
+					hoveredObject.GetComponent<Note> ().ShowNote();
+
+
 				}
+					
+			
+
 
 
 
@@ -65,15 +75,15 @@ public class Interactable : MonoBehaviour {
 	/**to determine whether the thing in the crosshair is interactable**/
 	public bool isInteractable(){
 		//Ray romano = Camera.main.ScreenPointToRay (Input.mousePosition);
-		Ray romano = new Ray(Camera.main.transform.position, Camera.main.transform.forward * 2f);
+		Ray romano = new Ray(Camera.main.transform.position, Camera.main.transform.forward);
 		RaycastHit hit = new RaycastHit ();
 
-		Debug.DrawRay (romano.origin, romano.direction * 2f, Color.green);
-		if (Physics.Raycast (romano, out hit, 2f)) {
+		Debug.DrawRay (romano.origin, romano.direction* 4f, Color.green);
+		if (Physics.Raycast (romano, out hit, 4f)) {
 			hoveredObject = hit.collider.gameObject;
 
 			//print ("yeh");
-			if (hit.collider.gameObject.tag == "touchable" || hit.collider.gameObject.tag == "pickup" || hit.collider.gameObject.tag == "door") {
+			if (hit.collider.gameObject.tag == "touchable" || hit.collider.gameObject.tag == "note" || hit.collider.gameObject.tag == "door") {
 				return true;
 			} else {
 				return false;
