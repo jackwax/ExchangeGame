@@ -30,6 +30,7 @@ public class JohnScript : MonoBehaviour {
 
 
 
+
 	// Use this for initialization
 	void Start () {
 		cbref = this.GetComponent<CharacterBehavior> ();
@@ -60,6 +61,16 @@ public class JohnScript : MonoBehaviour {
 	public bool MovementLocked(){
 		return lockMovement;
 	}
+
+
+	public bool SetLockMovement(){
+		lockMovement = true;
+
+		return lockMovement;
+
+	}
+
+
 
 
 
