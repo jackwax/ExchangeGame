@@ -8,6 +8,7 @@ public class MenuManager : MonoBehaviour {
 
 	// Use this for initialization
 	[SerializeField] private Image black_background;
+	[SerializeField] private ScreenFader sf;
 
 
 /**TODO:
@@ -37,7 +38,10 @@ public class MenuManager : MonoBehaviour {
 	}
 
 	public void PlayGame(){
-		SceneManager.LoadScene (SceneManager.GetActiveScene ().buildIndex + 1);
+		sf.EndScene (SceneManager.GetActiveScene ().buildIndex + 1);
+
+
+
 	}
 
 	public void QuitGame(){
