@@ -24,6 +24,9 @@ public class Interactable : MonoBehaviour {
 
 		
 	}
+
+
+
 	
 	// Update is called once per frame
 	void Update () {
@@ -48,6 +51,7 @@ public class Interactable : MonoBehaviour {
 
 				} else if (hoveredObject.tag == "note") {
 					hoveredObject.GetComponent<Note> ().ShowNote();
+					crosshair.gameObject.SetActive (false); //deactivates crosshair
 
 
 				}
